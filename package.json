@@ -1,0 +1,26 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ellabyun/online-shop.git"
+  },
+  "keywords": [],
+  "author": "Ella Byun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ellabyun/online-shop/issues"
+  },
+  "homepage": "https://github.com/Ellabyun/online-shop#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
