@@ -6,7 +6,7 @@
     <%- include('../../shared/includes/header') %>
     <main>
         <h1>Login</h1>
-        <form action="/signup" method="POST">
+        <form action="/login" method="POST">
             <input type="hidden" name="_csrf" value="<%=locals.csrfToken%>">
 
             <p>
@@ -17,7 +17,7 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" minlength="6" required>
             </p>
-            <button class="btn">Create Account</button>
+            <button class="btn">Login</button>
             <p id="switch-form"><a href="/signup">Create a new account</a></p>
         </form>
     </main>
