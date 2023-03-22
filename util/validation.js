@@ -14,7 +14,7 @@ function userCredentialAreValid(email, password) {
     password.trim().length >= 6 
 }
 
-function userDetailsAreValid(name, street, postal, city){
+function userDetailsAreValid(email, password, name, street, postal, city){
     return (
         userCredentialAreValid(email, password)&&
         !isEmpty(name) &&
