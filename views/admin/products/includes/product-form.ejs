@@ -5,7 +5,7 @@
     </p>
     <p>
         <label for="image">Image</label>
-        <input type="file" name="image" id="image" required accept="image/jpeg, image/png">
+        <input type="file" name="image" id="image" accept="image/jpeg, image/png" <% if(imageRequired) {%> required <%}%>>
     </p>
     <p>
         <label for="summary">Summary</label>
