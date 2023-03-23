@@ -20,6 +20,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static('public'));
+//'/products/assets'로 시작하는 요청만 이 미들웨어를 사용하라
+//업로드된 이미지를 정적으로 제공하는 방법
+//url을 통해 서버의 폴더 구조가 노출되지 않는 것이 장점!
+app.use('/products/assets', express.static('product-data'));
 app.use(express.urlencoded({extended: false}));
 
 const sessionConfig = createSessionConfig();
