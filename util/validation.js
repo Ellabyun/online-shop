@@ -1,5 +1,3 @@
-const { post } = require("../routes/auth.routes")
-
 function isEmpty(value){
     return (
         !value ||
