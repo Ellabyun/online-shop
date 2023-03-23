@@ -27,7 +27,7 @@ const sessionConfig = createSessionConfig();
 app.use(expressSession(sessionConfig));
 app.use(csrf());
 
-app.use(addCsrfTokenMiddleware)
+app.use(addCsrfTokenMiddleware);
 app.use(checkAuthStatusMiddleware);
 
 app.use(baseRoutes);
