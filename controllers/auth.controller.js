@@ -2,6 +2,7 @@ const User = require('../models/user.model');
 const authUtil = require('../util/authentication');
 const validation = require('../util/validation');
 const sessionFlash = require('../util/session-flash');
+const e = require('express');
 
 function getSignup(req, res){
     let sessionData = sessionFlash.getSessionData(req);
@@ -126,7 +127,6 @@ async function login(req, res, next) {
         })
         return;
     }
-
     authUtil.createUserSession(req, existingUser, function(){
         res.redirect('/');
     });
